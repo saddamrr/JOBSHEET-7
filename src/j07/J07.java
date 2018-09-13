@@ -31,12 +31,16 @@ public class J07 {
         
         return hasil[n-1];
     }
+    private static void tampilHasil(int n, BigInteger hasil) {
+        System.out.println("Bilangan Fibonacci ke-" + n + " : " + hasil);
+    }
     public static void main(String[] args) {
         String identitas = "Saddam Raihan Ramadhan / XR2 / 30";
         
         tampilJudul(identitas);
         int n = tampilInput();
         BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
     }
     
 }
